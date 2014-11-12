@@ -87,7 +87,8 @@ var comment = function(){
         time = '● ' + date2str(new Date(), 'yyyy-M-d h:m'), 
         newcmt = $('.note-comment:first').clone();
         newcmt.attr('id','comment-'+data.cmtid);
-        //newcmt.find('.author-name').html(user);
+        newcmt.removeClass('hide');
+        newcmt.find('.author-name').html("dong");
         newcmt.find('.reply-time').html(time);
         newcmt.find('p').html(cmt);
         newcmt.appendTo($('.comment-wrap'));
